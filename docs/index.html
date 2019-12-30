@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Description">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <link rel="stylesheet" href="../public/_css/index.css">
+</head>
+<body>
+<div id="app"></div>
+<script>
+    window.$docsify = {
+        name: '大道至简',
+        repo: '',
+        coverpage: true,
+        auto2top: true,
+        loadSidebar: true,
+        plugins: [
+            function (hook) {
+                var footer = [
+                    '<hr/>',
+                    '<footer>',
+                    '<span><a href="#">Amber</a> &copy;2020.</span>',
+                    '<span>此处是我家，留下买路钱 <a href="#" target="_blank">你谁啊</a>.</span>',
+                    '</footer>'
+                ].join('')
+
+                hook.afterEach(function (html) {
+                    return html + footer
+                })
+            }
+        ]
+    }
+</script>
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<script src="../public/_js/index.js"></script>
+</body>
+</html>
