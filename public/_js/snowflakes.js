@@ -1,6 +1,10 @@
 //    窗口大小
 var oPageX=window.screen.width;
 var oPageY=window.screen.height;
+$(document).ready(function () {
+    oPageY = $(".ready").height()-50;
+});
+
 var aSnow=[];
 //    雪花模板
 function snow(x,y,xspeed,yspeed,xsin,size){//x水平位置,y垂直位置,xspeed水平步距,yspeed垂直步距,xsin振幅,size雪花大小
@@ -15,8 +19,8 @@ function snow(x,y,xspeed,yspeed,xsin,size){//x水平位置,y垂直位置,xspeed�
         this.node.style.position='absolute';
         this.node.style.top=this.y+'px';
         this.node.style.left=this.x+'px';
-        this.node.innerHTML='️*'; //⭐
-        this.node.style.color='white'; //white gold
+        this.node.innerHTML='*';
+        this.node.style.color='gold'; //white gold
         document.body.appendChild(this.node);
     };
     this.createSnow();
