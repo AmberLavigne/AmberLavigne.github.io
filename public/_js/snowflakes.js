@@ -34,7 +34,7 @@ function snow(x,y,xspeed,yspeed,xsin,size){//x水平位置,y垂直位置,xspeed�
 function createSnow(){
     aSnow.push(new snow(Math.random()*oPageX,-50,0.02+Math.random()/10,1+Math.random(),Math.random()*30,20+Math.random()*10));
 }
-setInterval(createSnow,50);//一秒钟创建一个雪花
+// setInterval(createSnow,50);//一秒钟创建一个雪花
 //    雪花移动函数
 function snowMove(){
     for(var j=0;j<aSnow.length;j++){
@@ -45,4 +45,4 @@ function snowMove(){
         }
     }
 }
-setInterval(snowMove,10);
+// setInterval(snowMove,10);
