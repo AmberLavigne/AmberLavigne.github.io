@@ -1,2 +1,2 @@
 # Amber
-### this is new blog
+### This is just the beginning
